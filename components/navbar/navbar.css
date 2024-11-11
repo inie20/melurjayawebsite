@@ -1,0 +1,139 @@
+/* General Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    background-color: #FFFAE7;
+    max-height: 100px;
+    position: sticky;           /* Fixes navbar to the top of the viewport */
+    top: 0;                    /* Aligns the navbar to the top */
+    width: 100%;               /* Makes the navbar span the full width */
+    z-index: 1000;             /* High z-index to stay above other elements */
+}
+
+
+/* Logo Styling */
+#logo {
+    max-height: 80px; /* Set a maximum height */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+#company_name {
+    color: #7B0A0A;
+    font-size: clamp(20px, 2.5vw, 30px); /* Responsive font size */
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: bold;
+    text-decoration: none;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    padding-left:30px;
+    margin-right: auto;
+}
+
+.nav_links {
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.nav_links ul {
+    list-style: none;
+    display: flex; /* Ensure the list items are in a row */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.nav_links ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav_links ul li a {
+    display: block;
+    color: #114131;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5px 10px; /* Reduced padding for compactness */
+    font-size: clamp(14px, 2vw, 16px); /* Responsive font size */
+    text-align: center;
+}
+
+.nav_links ul li ul.dropdown li {
+    display: block;
+}
+
+.nav_links ul li a:hover {
+    color: #7B0A0A;
+}
+
+.nav_links ul li ul.dropdown {
+    width: 100%;
+    background: #FFFAE7;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 100%; /* This positions it directly below the parent */
+    left: 0; /* Aligns it to the left of the parent */
+    margin: 0; /* Ensure no extra margin */
+    padding: 0; /* Ensure no extra padding */
+    /*box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);*/
+}
+
+.nav_links ul li:hover ul.dropdown {
+    display: block;
+    transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+
+.nav_links ul li:hover ul.dropdown a {
+    font-weight: 550;
+    font-family: "Fraunces", serif;
+    font-size: clamp(5px, 2.5vw, 15px);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Align items to the start */
+        justify-content: flex-start;
+    }
+
+    .navbar_logo {
+        margin-bottom: 10px; /* Space between logo and nav links */
+        justify-content: center;
+    }
+
+    .nav_links {
+        width: 100%; /* Make nav links take full width */
+        display: block; /* Stack nav links vertically */
+        text-align: center;
+    }
+
+    .nav_links ul {
+        display: block; /* Ensure the list items are stacked */
+        width: 100%; /* Make ul take full width */
+    }
+
+    .nav_links ul li {
+        width: 100%; /* Make each nav link take full width */
+    }
+
+    .nav_links ul li a {
+        text-align: center; /* Center text in nav links */
+        padding: 10px 0; /* Adjust padding for vertical stacking */
+        font-size: 12px; /* Smaller font size on mobile */
+    }
+}
+
+
+
+/*CAN WE MAKE VAIRABLES IN CSS?*/

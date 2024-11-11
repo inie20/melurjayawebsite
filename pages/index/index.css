@@ -1,0 +1,391 @@
+/*General*/
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: clamp(30px, 8vw, 50px);
+    color: #114131;
+    text-align: center;
+    padding-left: 50px;
+    margin-bottom: 0px;
+    margin-top:0;
+}
+
+h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #114131;
+    text-align: center;
+    max-width: 1500px;
+    font-size: clamp(10px, 8vw, 30px); /* Adjust the font size as needed */
+    word-wrap: break-word;
+    margin: 0 auto; /* Centers the element */
+    padding: 0; /* Remove left padding */
+    margin-bottom: 20px;
+    margin-top:10px;
+    
+}
+
+.highlight {
+    color: #7B0A0A;
+    font-weight:800;
+}
+
+/*Landing Page*/
+.landing-page {
+    background: #FFFAE7;
+    padding: 70px 10px 10px 10px; /* Added top padding */
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+
+.landing-page .landing-page-left h1 {
+    color: #114131;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    max-width: 800px; /* Adjust the width to control line breaks */
+    line-height: 1.3; /* Adjusts the spacing between lines */
+    font-size: clamp(50px, 8vw, 80px); /* Adjust the font size as needed */
+    word-wrap: break-word; /* Ensures the text breaks naturally */
+    margin-bottom: 10;
+}
+
+.landing-page .landing-page-left h2 {
+    color: #114131;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    max-width: 800px; /* Adjust the width to control line breaks */
+    line-height: 1;
+    text-align: left;
+    margin-bottom:20px;
+    margin-top: 0;
+    padding: 0;
+    opacity: 1;
+}
+
+.landing-page .landing-page-left a.button {
+    display: inline-block; /* Allows padding to work properly */
+    padding: 10px 20px; /* Adjusts the padding for a button shape */
+    border-radius: 8px; /* Smooths the corners */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #114131;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.landing-page .landing-page-left a.button:hover {
+    background-color: #0d3327; /* Darkens the background on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover */
+}
+
+.landing-page .landing-page-left a.button:active {
+    transform: scale(0.98); /* Subtle press effect */
+}
+
+.landing-page .landing-page-left {
+    max-width: 60%; /* Adjust as needed to control the width of the left section */
+    padding-left: 40px;
+}
+
+.landing-page .landing-page-right {
+    max-width: 40%; /* Limits width for image section */
+    display: flex;
+    align-items: center; /* Centers image vertically */
+    justify-content: flex-end; /* Aligns image to the right */
+    overflow: hidden;
+}
+
+.landing-page .landing-page-right img {
+    min-height: 750px;
+    width: auto; /* Maintains aspect ratio */
+    padding: 0;
+    margin-top: -130px;
+}
+
+/* Product Menu */
+
+.product-menu {
+    padding: 30px 50px 10px 30px;
+}
+
+.product-menu .product-menu-subtext {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #114131;
+    text-align: center;
+    max-width: 1500px;
+    font-size: clamp(10px, 8vw, 30px);
+    word-wrap: break-word;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.product-menu .product-array {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 40px; /* Set a gap of 20px between items */
+    justify-content: center;
+    align-items: center;
+}
+
+.product-menu .product-array .product-indiv {
+    overflow: hidden; /* Hide overflow content */
+    width: 300px; /* Set fixed width for the product container */
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center; /* Center items horizontally */
+    margin: 0; /* Reset margin */
+    margin-top: 20px
+}
+
+.product-menu .product-array .product-indiv img {
+    width: 100%; /* Ensure image takes full width */
+    height: 400px; /* Set a fixed height for the images */
+    object-fit: cover; /* Crop the image to fill the container */
+    object-position: center; /* Center the image within the container */
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+}
+
+.product-menu .product-array .product-indiv:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.product-info {
+    display: flex; /* Use flexbox for h3 and rectangle */
+    align-items: center; /* Center items vertically */
+    justify-content: left; /* Center items horizontally */
+}
+
+.product-menu .product-array .product-indiv a {
+    text-decoration: none;
+}
+
+.product-menu .product-array .product-indiv a h3 {
+    font-weight: 500;
+}
+
+.product-menu .product-array .product-indiv a:hover h3 {
+    font-weight: 750;
+}
+
+.product-menu .product-array .product-indiv .rectangle {
+    background-color: #114131; /* Ensure this color is visible */
+    height: 30px; /* Set your desired height */
+    width: 5px; /* Set your desired width */
+    margin-left: 0;
+    margin-right: 8px; /* Space between rectangle and h3 */
+    display: inline-block; /* Ensure it's a block element */
+    padding-left: 0;
+    align-self: left;
+}
+
+.product-menu .product-array .product-indiv h3 {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    text-align: left;
+    color: #114131;
+    font-size: clamp(10px, 8vw, 40px);
+    padding: 0px;
+}
+
+/*Slider*/
+
+.product-highlight{
+    padding: 2rem;
+    text-align:center;
+}
+
+.product-highlight .slider-wrapper{
+    position:relative;
+}
+
+.product-highlight .image-slider{
+    display: flex;
+    aspect-ratio: 16/6;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0,0,0,25);
+    border-radius: 0.5rem;
+}
+
+.product-highlight .image-slider img{
+    flex: 1 0 50%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.product-highlight .slider-nav{
+    display:flex;
+    column-gap: 1rem;
+    position:absolute;
+    bottom: 6rem;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.product-highlight .slider-nav a{
+    width:0.5rem;
+    height:0.5rem;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    margin-bottom: 20px;
+}
+
+.product-highlight .slider-nav a:hover{
+    opacity: 1;
+
+}
+
+.product-highlight a.button {
+    display: inline-block; /* Allows padding to work properly */
+    padding: 10px 20px; /* Adjusts the padding for a button shape */
+    border-radius: 8px; /* Smooths the corners */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #114131;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    width:90%
+}
+
+.product-highlight a.button:hover {
+    background-color: #0d3327; /* Darkens the background on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover */
+}
+
+.product-highlight a.button:active {
+    transform: scale(0.98); /* Subtle press effect */
+}
+
+
+/* Media Queries */
+
+/* For devices with a max-width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    h2 {
+        font-size: clamp(24px, 6vw, 40px); /* Smaller font size for h2 */
+        text-align: center; /* Center h2 */
+        align-items: center;
+        justify-content: center;
+    }
+
+    h3 {
+        font-size: clamp(10px, 6vw, 24px); /* Smaller font size for h3 */
+        margin-bottom: 15px; /* Adjust margin for h3 */
+        text-align: center; /* Center h3 */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landing-page {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px 10px; /* Adjust padding */
+        text-align: center; /* Center text */
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .landing-page .landing-page-left {
+        max-width: 100%; /* Allow full width on smaller screens */
+        padding-left: 0; /* Remove left padding */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .landing-page .landing-page-right {
+        max-width: 100%; /* Allow full width on smaller screens */
+        justify-content: center; /* Center image */
+        margin-bottom: 20px; /* Add margin at the bottom */
+    }
+
+    .product-menu {
+        padding: 20px 10px; /* Adjust padding */
+        text-align: center; /* Center text */
+    }
+
+    .product-menu .product-array {
+        gap: 10px; /* Reduce gap between items */
+        justify-content: center; /* Center product items */
+    }
+
+    .product-menu .product-array .product-indiv {
+        width: 80%; /* Make product items wider */
+        margin-top: 10px; /* Adjust margin */
+        text-align: center; /* Center text in product items */
+    }
+
+    .product-menu .product-array .product-indiv img {
+        height: 250px; /* Adjust image height */
+    }
+
+    .product-highlight .slider-nav {
+        bottom: 4rem; /* Adjust position of slider navigation */
+        justify-content: center; /* Center slider navigation */
+    }
+}
+
+/* For devices with a min-width of 769px and max-width of 1200px (larger tablets and small laptops) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    h2 {
+        font-size: clamp(28px, 7vw, 48px); /* Adjust font size for larger tablets */
+        text-align: center; /* Center h2 */
+    }
+
+    h3 {
+        font-size: clamp(10px, 7vw, 28px); /* Adjust font size for larger tablets */
+        text-align: center; /* Center h3 */
+    }
+
+    .landing-page {
+        padding: 50px 20px; /* Adjust padding */
+        align-items: center; /* Center content */
+        text-align: center; /* Center text */
+        margin: 20px;
+    }
+
+    .landing-page .landing-page-left {
+        max-width: 70%; /* Adjust width for larger tablets */
+        text-align: center; /* Center text */
+    }
+
+    .landing-page .landing-page-right {
+        max-width: 30%; /* Adjust width for larger tablets */
+        justify-content: center; /* Center image */
+    }
+
+    .product-menu .product-array {
+        gap: 30px; /* Adjust gap between items */
+        justify-content: center; /* Center product items */
+    }
+
+    .product-menu .product-array .product-indiv {
+        width: 45%; /* Adjust width for product items */
+        text-align: center; /* Center text in product items */
+    }
+
+    .product-menu .product-array .product-indiv img {
+        height: 350px; /* Adjust image height */
+    }
+
+    .product-highlight .slider-nav {
+        bottom: 5rem; /* Adjust position of slider navigation */
+        justify-content: center; /* Center slider navigation */
+    }
+}
